@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      function process(mks, name) {
+        //alert(`Received: ${name} : ${mks}`);
+        //document.write(`<h1><em>Received: ${name} : ${mks}</em></h1>`);
+        document.getElementById(
+          "as1"
+        ).innerHTML = `<h1><em>Received: ${name} : ${mks}</em></h1>`;
+
+        let ftInfo = document.getElementById("ft").innerHTML;
+        ftInfo =
+          ftInfo +
+          "<p>This will appear below h2 footer info but inside footer</p>";
+        document.getElementById("ft").innerHTML = ftInfo;
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>PROG8021 - Week 12</h1>
+    </header>
+    <main>
+      <input
+        type="button"
+        value="Submit Now"
+        onClick="process(84.5, 'Testing data')"
+      />
+    </main>
+    <aside id="as1"></aside>
+    <footer id="ft" style="background-color: aquamarine">
+      <h2>This is a Footer</h2>
+    </footer>
+  </body>
+</html>
