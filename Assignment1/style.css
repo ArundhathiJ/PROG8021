@@ -1,0 +1,7 @@
+h1 {
+  font-size: 2.5em;
+  font-family: "Lobster", cursive;
+  color: #d35400; /* Orange color for the welcome message */
+  text-shadow: 2px 2px #f5cba7;
+  margin-bottom: 20px;
+}
