@@ -5,31 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="JuiceShop.js"></script>
   </head>
   <body>
     <h1>Welcome to our Juice shop!</h1>
     <h2>Give yourself a boost!</h2>
-    <label>Apple juice -$5</label>
-    <input type="button" value="Add to cart" />
+    <div class="item">
+      <label>Apple juice -$5</label>
+      <input
+        type="button"
+        value="Add to cart"
+        onclick="addToCart('Apple Juice')"
+      />
+    </div>
 
     <div class="item">
       <label>Orage juice -$5</label>
-      <input type="button" value="Add to cart" />
+      <input
+        type="button"
+        value="Add to cart"
+        onclick="addToCart('Orange juice')"
+      />
     </div>
 
     <div class="item">
       <label>Iced juice -$5</label>
-      <input type="button" value="Add to cart" />
+      <input
+        type="button"
+        value="Add to cart"
+        onclick="addToCart('Iced juice')"
+      />
     </div>
 
     <div class="item">
       <label>Pinapple juice -$5</label>
-      <input type="button" value="Add to cart" />
+      <input
+        type="button"
+        value="Add to cart"
+        onclick="addToCart('Pinapple juice')"
+      />
     </div>
 
     <div class="item">
       <label>Sugarcane juice -$5</label>
-      <input type="button" value="Add to cart" />
+      <input
+        type="button"
+        value="Add to cart"
+        onclick="addToCart('Sugarcane juice')"
+      />
     </div>
+    <button
+      id="checkoutButton"
+      onclick="checkOut()"
+      style="display: none; margin-top: 20px"
+    >
+      Checkout
+    </button>
   </body>
 </html>

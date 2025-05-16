@@ -5,3 +5,30 @@ h1 {
   text-shadow: 2px 2px #f5cba7;
   margin-bottom: 20px;
 }
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 300px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border: 0.1px solid rgb(103, 29, 29);
+  background-color: #f9f9f9;
+}
+
+.item label {
+  font-weight: bold;
+}
+
+.item input[type="button"] {
+  padding: 6px 12px;
+  background-color: #ffc107;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.item input[type="button"]:hover {
+  background-color: #e0a800;
+}
