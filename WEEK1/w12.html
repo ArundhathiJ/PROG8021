@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      function interact() {
+        alert("Calculator");
+        var firstNum = 54,
+          secondNum = 104.355;
+
+        /*var firstName = " Peter ";
+        var lastName = "Lucas";
+        var sum = firstNum + secondNum;
+        var name = firstName + " " + lastName;
+       
+        alert("Numerical addition result:" + sum);
+        alert("Full name is" + name);
+ */
+        var firstNum = parseInt(prompt("Enter first number"));
+        var secondNum = parseInt(prompt("Enter second number"));
+        var firstName = prompt("enter first name");
+        var lastName = prompt("enter last name");
+
+        var sum = firstNum + secondNum;
+        var name = `${firstName} ${lastName}`;
+
+        alert("Numerical addition result:" + sum);
+        alert(`full name is: ${name}`);
+      }
+    </script>
+  </head>
+  <body onload="interact()"></body>
+</html>

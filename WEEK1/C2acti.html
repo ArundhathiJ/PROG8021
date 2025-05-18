@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function add(no1, no2) {
+        var sum = no1 + no2;
+        return sum;
+      }
+      function min(no1, no2) {
+        var res = no1 - no2;
+        return min;
+      }
+      function calculate() {
+        var fNum = parseFloat(document.getElementById("fn").value);
+        var sNum = parseFloat(document.getElementById("sn").value);
+        var addResult = add(fNum, sNum);
+        var dedResult = min(fNum, sNum);
+        document.getElementById(
+          "disp"
+        ).innerHTML = `<h3>Addition Result: ${addResult}</h3><h3>Deduction Result: ${dedResult}</h3>`;
+        //alert(`First: ${fNum} Second: ${sNum}`);
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <header><h1>Calculator</h1></header>
+    <main>
+      <label>First Number: </label>
+      <input type="text" id="fn" />
+    </div>
+
+    <div>
+      <label>Second Number: </label>
+      <input type="text" id="sn" />
+    </div>
+    <div>
+      <input type="button" value="+" onclick="calculate()" />
+    </div>
+    <div>
+      <input type="button" value="-" onclick="calculate()" />
+    </div>
+    <div id="disp">
+
+        </div>
+      </main>
+  </body>
+</html>
