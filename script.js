@@ -29,7 +29,7 @@ function checkOut() {
   let name = prompt("Please enter your name to proceed:");
 
   if (!name || !isNaN(name)) {
-    alert("⚠ Name is required to checkout.");
+    alert("Name is required to checkout.");
     return;
   }
 
@@ -77,7 +77,7 @@ function checkOut() {
     document.getElementById("grandTotal").textContent = "";
     document.getElementById("printReceipt").innerHTML = "";
 
-    cart = {}; // Clear the cart
+    cart = {}; //clear the cart after checkout
     document.getElementById("checkoutButton").style.display = "none";
-  }, 60000); // 6
+  }, 20000); // after 20 sec
 }
