@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Linking external CSS and JavaScript files -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Main title and subtitle -->
+    <h1>Conestoga Grage Sales</h1>
+    <h2>Raising Money For The FrontLine Fund</h2>
+    <main>
+      <!--  form begins -->
+      <form name="myForm" action="" method="post">
+        <fieldset>
+          <!-- User Name Input -->
+          <div>
+            <label>Name:</label>
+            <input type="text" name="name" id="name" placeholder="First Last" />
+            <!-- Error display for name -->
+            <p id="nameerr"></p>
+          </div>
+          <div>
+            <!-- Error display for email -->
+            <label>Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="email@domain.com"
+            />
+            <!-- Error display for email -->
+            <p id="emailerr"></p>
+          </div>
+          <div>
+            <!-- Credit Card Number Input -->
+            <label>Credit Card Number</label>
+            <input
+              type="text"
+              name="cNumber"
+              id="cardNumber"
+              placeholder="xxxx-xxxx-xxxx-xxxx"
+            />
+            <!-- Error display for credit card number -->
+            <p id="carderr"></p>
+          </div>
+          <!-- Expiry Month Input -->
+          <div>
+            <label>Credit Card Expiry Month</label>
+            <input type="text" name="eNumber" id="expMonth" placeholder="MMM" />
+            <!-- Error display for Expiry Month Input -->
+            <p id="montherr"></p>
+          </div>
+          <div>
+            <!-- Expiry Year Input -->
+            <label>Credit Card Expiry Year</label>
+            <input type="text" name="eYear" id="expYear" placeholder="yyyy" />
+            <!-- Error display for Expiry Year Input -->
+            <p id="yearerr"></p>
+          </div>
+
+          <h3>Buy generously</h3>
+          <!-- display item quantities -->
+          <div>
+            <label>Number of water Bottles($5)</label>
+            <input type="text" name="bottles" id="bottles" placeholder="10" />
+          </div>
+          <div>
+            <label>Number of Caps($20)</label>
+            <input type="text" name="caps" id="caps" placeholder="10" />
+          </div>
+          <div>
+            <label>Number of pens($2)</label>
+            <input type="text" name="pens" id="pens" placeholder="10" />
+          </div>
+          <div>
+            <label>Number of candy Bags($10)</label>
+            <input type="text" name="bags" id="bags" placeholder="10" />
+          </div>
+          <div>
+            <label>Number of Cup Cakes($3)</label>
+            <input type="text" name="cakes" id="cakes" placeholder="10" />
+          </div>
+          <button type="button" onclick="handleForm()" id="checkoutBtn">
+            Checkout
+          </button>
+          <p id="formerr"></p>
+          <p id="purchaseerr"></p>
+        </fieldset>
+      </form>
+      <div id="receipt"></div>
+    </main>
+  </body>
+</html>
