@@ -1,0 +1,72 @@
+h1 {
+  font-size: 2.5em;
+  font-family: "Lobster", cursive;
+  color: #d35400;
+  text-shadow: 2px 2px #f5cba7;
+  margin-bottom: 20px;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 300px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border: 0.1px solid rgb(103, 29, 29);
+  background-color: #f9f9f9;
+}
+
+.item label {
+  font-weight: bold;
+}
+
+.item input[type="button"] {
+  padding: 6px 12px;
+  background-color: #ffc107;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.item input[type="button"]:hover {
+  background-color: #e0a800;
+}
+
+#checkoutButton {
+  background-color: rgb(166, 226, 26);
+  color: rgb(202, 21, 21);
+  padding: 10px 20px;
+  border: 3px solid #b21818;
+  font-size: 16px;
+  border-radius: 5px;
+}
+h2 {
+  font-size: 2.5em;
+  font-family: "Lobster", cursive;
+  color: #d35400;
+  text-shadow: 2px 2px #f5cba7;
+  margin-bottom: 20px;
+}
+#receipt table {
+  width: 10%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#receipt th,
+#receipt td {
+  padding: 8px;
+  border: 1px solid #aa3a3a;
+  text-align: center;
+}
+
+#receipt p {
+  font-weight: bold;
+  margin-top: 10px;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}

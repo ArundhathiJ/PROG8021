@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juice Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Welcome to our Juice Shop!</h1>
+    <h2>Give yourself a boost!</h2>
+
+    <div class="item">
+      <label>Lemon Juice - $4.50</label>
+      <input
+        type="button"
+        value="Add to cart"
+        onclick="addToCart('Lemon Juice')"
+      />
+    </div>
+
+    <div class="item">
+      <label>Pomegranate Juice - $5.00</label>
+      <input
+        type="button"
+        value="Add to cart"
+        onclick="addToCart('Pomegranate Juice')"
+      />
+    </div>
+
+    <div class="item">
+      <label>Blueberry Juice - $5.25</label>
+      <input
+        type="button"
+        value="Add to cart"
+        onclick="addToCart('Blueberry Juice')"
+      />
+    </div>
+
+    <div class="item">
+      <label>Pineapple Juice - $4.75</label>
+      <input
+        type="button"
+        value="Add to cart"
+        onclick="addToCart('Pineapple Juice')"
+      />
+    </div>
+
+    <div class="item">
+      <label>Mango Juice - $6.00</label>
+      <input
+        type="button"
+        value="Add to cart"
+        onclick="addToCart('Mango Juice')"
+      />
+    </div>
+    <div class="centered">
+      <button
+        id="checkoutButton"
+        onclick="checkOut()"
+        style="display: none; margin-top: 20px"
+      >
+        Checkout
+      </button>
+    </div>
+
+    <div id="receipt" style="display: none">
+      <h3 id="customerName"></h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="printReceipt"></tbody>
+      </table>
+      <p id="subtotal"></p>
+      <p id="tax"></p>
+      <p id="grandTotal"></p>
+    </div>
+  </body>
+</html>
